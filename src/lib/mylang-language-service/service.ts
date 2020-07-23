@@ -1,7 +1,7 @@
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
 
 const LANGUAGE_ID = 'mylang';
-const THEME = 'mylang-dark';
+const THEME = 'mylang';
 
 export const mylangLanguageService = {
   id: LANGUAGE_ID,
@@ -27,7 +27,7 @@ export const mylangLanguageService = {
 
     // Define a new theme that contains only rules that match this language
     monaco.editor.defineTheme(THEME, {
-      base: 'vs-dark',
+      base: 'vs',
       inherit: false,
       rules: [
         { token: 'custom-info', foreground: '#808080' },
